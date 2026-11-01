@@ -21,7 +21,7 @@ export default function DonationForm() {
             <button type="button" className="on"><Banknote size={14} /> Donasi Uang (Tunai / Transfer)</button>
             <button type="button"><Package size={14} /> Donasi Barang / Logistik</button>
           </div>
-          <form className="fbody" onSubmit={(e) => e.preventDefault()}>
+          <form className="fbody">
             <div className="fld">
               <label>Nama Lengkap Donatur <i>*</i></label>
               <input className="inp" placeholder="Contoh: Bpk. Hendra Gunawan" readOnly />
@@ -77,7 +77,7 @@ export default function DonationForm() {
               </div>
             </div>
 
-            <button type="submit" className="submit"><ShieldCheck size={18} /> Kirim Konfirmasi Donasi Uang</button>
+            <button type="button" className="submit"><ShieldCheck size={18} /> Kirim Konfirmasi Donasi Uang</button>
           </form>
         </div>
       </div>
